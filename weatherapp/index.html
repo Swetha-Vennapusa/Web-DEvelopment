@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <div class="search">
+            <i class="fa-sharp fa-solid fa-location-dot"></i>
+            <input type="text" id="cityName" placeholder="Enter Your Location" spellcheck="false">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+       <!-- <p class="city-hide">City</p> -->
+        <div>
+            <div class="weather-box">
+                <img src="cloud.png" class="weather-icon">
+                <p class="temperature">0<span>°C</span></p>
+                <p class="description">Broken Cloud</p>
+                <p class="city-hide">City</p>
+            </div>
+            <div class="weather-details">
+                <div class="humidity">
+                    <i class="fa-solid fa-water"></i>
+                    <div class="text">
+                        <div class="info-humidity">
+                            <p class="humid" style="font-weight: bold;font-size: 28px;">0%</p>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="text">
+                        <div class="info-wind">
+                            <p class="winds" style="font-weight: bold;font-size: 28px;">0Km/h</p>
+                            <p>WindSpeed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="not-found">
+            <div class="box">
+                <img src="404.png">
+                <p>Oops! Location not found</p>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
